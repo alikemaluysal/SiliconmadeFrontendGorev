@@ -70,16 +70,74 @@ else{
     }
     
 
+        alert("Giriş Başarılı!");
+
+
+}
+
+
+
+    
+
+}
+
+const mail2 = document.getElementById('mail2');
+const password2 = document.getElementById('password2');
+
+function GirisYap(){
+
+
+    
+
+let text = "";
+var sayac = 0;
+const eksikler = [];
+
+
+
+
+
+    if(mail2.value.length == 0){
+
+        
+        eksikler[sayac] = "E-mail Adresi";
+        sayac++;
+    }
+
+    if(password2.value.length == 0){
+        
+        eksikler[sayac] = "Şifre";
+        sayac++;
+    }
+
+    for (let i = 0; i < eksikler.length; i++) {
+
+        text += eksikler[i];
+
+        if(i != eksikler.length-1){
+            text += " / "
+        }
+
+    }
+
+    if( mail2.value.length == 0 || password2.value.length == 0){
+        alert("Şu alanları boş bırakamazsınız: " + text);
+    }
+
+    else{
+        alert("Giriş Başarılı!");
+    }
+
+
+    
+
 
 }
     
 
-    
 
 
 
-
-}
 
 
 
