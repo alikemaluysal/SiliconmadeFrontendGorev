@@ -1,3 +1,11 @@
+@media (max-width: 767px) {
+    .hidden-mobile {
+      display: none;
+    }
+  }
+
+
+
 .fielsetcolor{
     border-color: blue !important;
     color: blue ;
@@ -12,6 +20,19 @@
 
     
 }
+
+.girisyazirengi{
+    font-size: 90%;
+    display: inline-block;
+    /* float: left; */
+    margin-right: 15px ;
+    font-weight: bold;
+    text-decoration: underline;
+
+    
+}
+
+
 
 
 
@@ -64,3 +85,5 @@ a:link{
     color: rgb(250,167,0)
     
     }
+
+
