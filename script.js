@@ -86,6 +86,7 @@ else{
 
     else{
         alert("Giriş Başarılı!");
+        Sayfa3();
     }    
 
 
@@ -152,12 +153,31 @@ const eksikler = [];
 
     else{
         alert("Giriş Başarılı!");
+        Sayfa4();
     }
 
 }
     
 
 
+}
+
+
+
+function Sayfa2(){
+
+    window.location='sayfa2.html';
+
+}
+
+function Sayfa3(){
+
+    window.location='sayfa3.html';
+}
+
+function Sayfa4(){
+
+    window.location='sayfa4.html';
 }
     
 
