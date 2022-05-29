@@ -33,6 +33,9 @@ const eksikler = [];
         sayac++;
     }
 
+
+
+
     if(password.value.length == 0){
         
         eksikler[sayac] = "Şifre";
@@ -49,9 +52,21 @@ const eksikler = [];
 
     }
 
+    if (mail.value != 0 && !mail.value.includes("@")){
+
+        alert("Geçersiz E-Posta Adresi!");
+    
+    }
+
+    else{
+
     if(name1.value.length == 0 || surname.value.length == 0 || mail.value.length == 0 || password.value.length == 0){
         alert("Şu alanları boş bırakamazsınız: " + text);
     }
+
+
+
+
 
 else{
 
@@ -68,14 +83,17 @@ else{
 
         alert("Lütfen D&R Üyeliği Aydınlatma Metni'ni onaylayın")
     }
-    
 
+    else{
         alert("Giriş Başarılı!");
+    }    
+
+
 
 
 }
 
-
+}
 
     
 
@@ -120,6 +138,14 @@ const eksikler = [];
 
     }
 
+    if (mail2.value != 0 && !mail2.value.includes("@")){
+
+        alert("Geçersiz E-Posta Adresi!");
+    
+    }
+
+    else{
+
     if( mail2.value.length == 0 || password2.value.length == 0){
         alert("Şu alanları boş bırakamazsınız: " + text);
     }
@@ -128,7 +154,7 @@ const eksikler = [];
         alert("Giriş Başarılı!");
     }
 
-
+}
     
 
 
